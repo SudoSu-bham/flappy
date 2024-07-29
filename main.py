@@ -170,10 +170,10 @@ class Flappy():
                 if event.type == pygame.QUIT:
                     self.running = False
                 elif event.type == pygame.MOUSEBUTTONDOWN or (
-                    event.type == pygame.KEYDOWN and any(
+                    event.type == pygame.KEYDOWN and any((
                         event.key == pygame.K_SPACE,
                         event.key == pygame.K_UP
-                    )
+                    ))
                 ):
                     if self.state == INIT:
                         self.state = PLAY
